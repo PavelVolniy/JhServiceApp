@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_add_form_article"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_corner_radius_5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/number_text"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/loader_number"
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/jhTextColorWhite"
+                    android:hint="@string/number_loader_hint_text"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    tools:ignore="NestedWeights" />
+
+                <ImageButton
+                    android:id="@+id/fn_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fn_button" />
+
+                <ImageButton
+                    android:id="@+id/edit_loader_field_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_corner_radius_5dp"
+                    android:src="@drawable/ic_edit_button" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_corner_radius_5dp"
+                android:padding="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/date_button"
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/jhTextColorWhite"
+                    android:inputType="datetime"
+                    android:text="@string/default_text_date_button"
+                    app:cornerRadius="10dp" />
+
+                <ImageView
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/ic_calendar" />
+
+                <TextView
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/hours_symbol"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/hours"
+                    style="@style/editTextAddFormStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@color/jhTextColorWhite"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/place_of_operations"
+                style="@style/editTextAddFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/jhTextColorWhite"
+                android:foreground="@drawable/bg_corner_radius_5dp"
+                android:hint="@string/number_report_field_hint"
+                android:inputType="textMultiLine|textAutoComplete|textAutoCorrect|textCapSentences"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_corner_radius_5dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/article_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_corner_radius_5dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_article_recyclerview"
+                tools:itemCount="3"
+                tools:listitem="@layout/article_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/default_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom"
+                    android:layout_weight="3"
+                    android:text="@string/description_text"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/add_default_art_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/bg_corner_radius_5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_list_button" />
+
+                <ImageButton
+                    android:id="@+id/add_article_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_corner_radius_5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_plus_square" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/jhTextColorWhite"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textAutoComplete|textAutoCorrect|textCapSentences"
+                android:maxLines="12"
+                android:minLines="1"
+                android:padding="5dp"
+                tools:text="@tools:sample/lorem/random" />
+
+            <EditText
+                android:id="@+id/internal_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/jhTextColorWhite"
+                android:gravity="top|start"
+                android:hint="@string/internal_comments_hint"
+                android:inputType="textMultiLine|textAutoComplete|textAutoCorrect|textCapSentences"
+                android:maxLines="4"
+                android:minLines="1"
+                android:padding="5dp"
+                tools:text="@tools:sample/lorem/random" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_button"
+                    style="@style/buttonStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:background="@drawable/bg_corner_radius_solid_12dp"
+                    android:text="@string/save_button"
+                    android:textColor="@color/jhGrayDark" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_button"
+                    style="@style/buttonStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:foreground="@drawable/bg_corner_radius_12dp"
+                    android:text="@string/cancel_button"
+                    android:textColor="@color/jhGrayDark" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

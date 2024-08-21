@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">JH service APP</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jh_service_label_start_page">JH service</string>
+    <string name="default_user_name_text">Ivanov I</string>
+    <string name="default_number_text">00000000</string>
+    <string name="default_date_text">22.02.23</string>
+    <string name="default_hours_text">1000 h</string>
+    <string name="number_text">№</string>
+    <string name="number_loader_hint_text">enter number the loader</string>
+    <string name="article_text">article</string>
+    <string name="name_of_article_hint">name article</string>
+    <string name="article_count_title_add_form">count</string>
+    <string name="description_text">Description</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="default_article">0000000</string>
+    <string name="default_name_article">name article</string>
+    <string name="default_articleCount">0.0</string>
+    <string name="hours_symbol">h</string>
+    <string name="today_default_text">Today</string>
+    <string name="_22_01_2024_26_01_2024_default_text">22.01.2024-26.01.2024</string>
+    <string name="_22_01_2024_default_text">22.01.2024</string>
+    <string name="default_text_date_button">02.02.23</string>
+    <string name="add_new_report_label">add new report</string>
+    <string name="fn_inject_text_to_loader_number_field">FN</string>
+    <string name="select_data_dialog_date_picker">Select data</string>
+    <string name="settings_menu_text">settings</string>
+    <string name="text_username_field">Enter yore name</string>
+    <string name="user_code_field">user code</string>
+    <string name="settings_lable">settings</string>
+    <string name="question_delete_dialog">Do you wont delete report?</string>
+    <string name="default_article_number">00000000</string>
+    <string name="user_was_save_toast_text">User was save</string>
+    <string name="type_of_work_field_hint">type of work</string>
+    <string name="storage_hint">storage</string>
+    <string name="customer_s_paid_checkbox">Paid</string>
+    <string name="number_report_field_hint">number report</string>
+    <string name="internal_comments_hint">internal comments</string>
+    <string name="article_title_add_form">article</string>
+    <string name="name_article_title_add_form">name</string>
+    <string name="num_title_add_form">num</string>
+    <string name="default_hint_user_number" translatable="false">00</string>
+    <string name="enter_filter_request_filter_hint">enter filter request</string>
+    <string name="add_art_button_settings">add</string>
+    <string name="error_message_settings_page">will not be empty</string>
+    <string name="article_number_field_hint_settings_page">article number</string>
+
+    <array name="typesOfOperations">
+        <item>repair</item>
+        <item>TO</item>
+    </array>
+</resources>

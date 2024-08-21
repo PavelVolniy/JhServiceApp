@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="customAnimation">
+        <item name="android:windowExitAnimation">@anim/enter_slide_left</item>
+        <item name="android:windowEnterAnimation">@anim/exit_slide_left</item>
+    </style>
+
+
+    <style name="descriptionStyle">
+        <item name="android:textColor">@color/jhTextColorWhite</item>
+        <item name="android:paddingBottom">@dimen/description_padding</item>
+    </style>
+
+    <style name="editTextAddFormStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/jhTextColorBlack</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">5dp</item>
+        <item name="android:paddingVertical" tools:targetApi="o">5dp</item>
+    </style>
+
+    <style name="titleTextAddFormStyle">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/jhTextColorBlack</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">5dp</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/jhTextColorBlack</item>
+        <item name="android:textSize">15sp</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="cornerRadius">@dimen/radius_save_button</item>
+    </style>
+</resources>

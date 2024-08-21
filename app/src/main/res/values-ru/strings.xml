@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JH service APP</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jh_service_label_start_page">JH сервис</string>
+    <string name="default_user_name_text">Иванов И</string>
+    <string name="default_number_text">00000000</string>
+    <string name="default_date_text">22.02.23</string>
+    <string name="default_hours_text">1000 h</string>
+    <string name="number_text">№</string>
+    <string name="number_loader_hint_text">введите номер погрузчика</string>
+    <string name="article_text">артикул</string>
+    <string name="name_of_article_hint">наименование артикула</string>
+    <string name="article_count_title_add_form">колличество</string>
+    <string name="description_text">Описание</string>
+    <string name="save_button">Сохранить</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="default_article">0000000</string>
+    <string name="default_name_article">наименование артикула</string>
+    <string name="default_articleCount">0.00</string>
+    <string name="hours_symbol">h</string>
+    <string name="today_default_text">Сегодня</string>
+    <string name="_22_01_2024_26_01_2024_default_text">22.01.2024-26.01.2024</string>
+    <string name="_22_01_2024_default_text">22.01.2024</string>
+    <string name="default_text_date_button">02.02.23</string>
+    <string name="add_new_report_label">добавить новый отчет</string>
+    <string name="fn_inject_text_to_loader_number_field">FN</string>
+    <string name="select_data_dialog_date_picker">Выберите дату</string>
+    <string name="settings_menu_text">настройки</string>
+    <string name="text_username_field">Введите свое имя</string>
+    <string name="user_code_field">код пользователя</string>
+    <string name="settings_lable">настройки</string>
+    <string name="question_delete_dialog">Удалить отчет?</string>
+    <string name="default_article_number">00000000</string>
+    <string name="user_was_save_toast_text">Пользователь был сохранен</string>
+    <string name="type_of_work_field_hint">тип работ</string>
+    <string name="storage_hint">склад</string>
+    <string name="customer_s_paid_checkbox">платно</string>
+    <string name="number_report_field_hint">номер заказа</string>
+    <string name="internal_comments_hint">внутренние комментарии</string>
+    <string name="article_title_add_form">артикул</string>
+    <string name="name_article_title_add_form">наименование</string>
+    <string name="num_title_add_form">номер</string>
+    <string name="enter_filter_request_filter_hint">фильтр</string>
+    <string name="add_art_button_settings">добавить</string>
+    <string name="error_message_settings_page">должно быть не пусным</string>
+    <string name="article_number_field_hint_settings_page">артикул</string>
+
+    <array name="typesOfOperations">
+        <item>ремонт</item>
+        <item>ТО</item>
+    </array>
+</resources>

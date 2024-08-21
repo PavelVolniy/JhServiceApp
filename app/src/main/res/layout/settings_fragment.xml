@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jhGrayLight"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+
+    <EditText
+        android:id="@+id/name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_username_field"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/user_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_code_field"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_user_button"
+        style="@style/buttonStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_margin="@dimen/save_user_button_margin"
+        android:background="@drawable/bg_corner_radius_solid_12dp"
+        android:text="@string/save_button"
+        android:textColor="@color/jhGrayDark"
+        app:cornerRadius="@dimen/radius_save_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/article_number_settings_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/article_number_settings"
+                style="@style/editTextAddFormStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/default_margin_article"
+                android:background="@color/jhTextColorWhite"
+                android:hint="@string/article_number_field_hint_settings_page"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/article_name_settings"
+            style="@style/editTextAddFormStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_margin_article"
+            android:layout_weight="1"
+            android:background="@color/jhTextColorWhite"
+            android:hint="@string/default_name_article"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/add_def_art_button_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_corner_radius_5dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_plus_square" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/article_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/article_field" />
+</LinearLayout>
